@@ -67,7 +67,7 @@ class Space:
 
     def display(self):
         """ Show board as 2D grid """
-        colormap = colors.ListedColormap(["white", "indigo", "pink"])
+        colormap = colors.ListedColormap(["white", "indigo"])
         plt.imshow(self.board, cmap=colormap, interpolation='nearest')
         plt.show()
 
@@ -156,7 +156,7 @@ class Space:
 if __name__ == "__main__":
     # Create Board
 
-    s = Space(rows=100, cols=100, agent_count=7000, color_count=2, seed=10)
+    s = Space(rows=100, cols=100, agent_count=7000, color_count=1, seed=10)
     # s = Space(rows=5, cols=5, agent_count=10, color_count=1, seed=15)
 
     s.display()
